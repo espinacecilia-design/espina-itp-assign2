@@ -1,0 +1,108 @@
+---
+title: "ITP-W04-Shopify Store - Assignment 2 - Store Concept and Initial Shopify Setup"
+author: "Cecilia Espina"
+date: today
+format: 
+  html: 
+    toc: true
+    toc-depth: 4
+    toc-expand: true
+    number-sections: true
+    code-link: true
+    code-tools: true
+    code-fold: true
+    embed-resources: true
+    theme: cosmo
+editor: visual
+execute: 
+  freeze: auto
+---
+
+## Introduction
+
+This report outlines the concept and initial Shopify setup for my practice store, **Little Legs Pet Co.**, a boutique pet store built around dachshunds and other small, long-bodied dog breeds. The store concept, target customer profile, and product plan below were developed as the foundation for the Shopify storefront setup completed in this assignment.
+
+::: callout-note
+This is a practice/prototype store created for coursework purposes only. No real payments are processed and no real transactions occur.
+:::
+
+## Store Name and Concept
+
+**Store name:** Little Legs Pet Co.
+
+**Concept:** Little Legs Pet Co. is a boutique e-commerce pet store that sells gear, apparel, treats, and accessories designed specifically for dachshunds and other small, long-bodied dog breeds. The store was inspired by my own two dachshunds and the gap I noticed in mainstream pet retail: most pet stores design products for an "average" dog body shape, which doesn't fit breeds with long backs and short legs well.
+
+> "Most pet stores sell one-size-fits-most. Little Legs exists for the dogs that mainstream gear was never built for."
+
+The store's brand identity leans playful and warm, using the dachshund's long, low silhouette as a recurring visual motif across packaging and the website.
+
+## Target Customer
+
+The target customer for Little Legs Pet Co. is a dachshund or small-breed dog owner who treats their pet as a family member and is willing to pay a premium for products designed specifically for their dog's body type and needs. Key characteristics include:
+
+- **Demographics:** Primarily ages 25-45, skews female, urban and suburban households
+- **Lifestyle:** Active on Instagram and TikTok pet content/communities; engaged in "pet parent" culture; likely to follow dachshund-specific accounts and influencers
+- **Shopping behavior:** Shops online frequently, researches products before buying, values niche/specialty positioning over big-box pet retailers (e.g., Petco, Chewy)
+- **Motivations:** Often concerned about breed-specific health issues such as Intervertebral Disc Disease (IVDD)[^1], which makes supportive, well-fitted gear especially appealing
+
+[^1]: IVDD is a spinal condition common in long-bodied breeds like dachshunds, caused by degeneration of the discs between vertebrae. It is a major driver of demand for orthopedic and back-support pet products.
+
+## Product Category Plan
+
+Little Legs Pet Co. will launch with five core product categories, summarized in @tbl-categories below.
+
+```{r}
+#| label: tbl-categories
+#| tbl-cap: "Little Legs Pet Co. - Initial Product Category Plan"
+#| code-fold: true
+
+categories <- data.frame(
+  Category = c(
+    "Orthopedic & Support Gear",
+    "Apparel & Accessories",
+    "Treats & Nutrition",
+    "Toys & Enrichment",
+    "Travel & Home Gear"
+  ),
+  `Example Products` = c(
+    "Back-support harnesses, dog ramps, supportive dog beds",
+    "Long-bodied sweaters, raincoats, custom-fit collars",
+    "Joint-health treats, weight management chews",
+    "Low-impact chew toys, puzzle feeders",
+    "Low-clearance car seats, travel carriers, ramps for furniture"
+  ),
+  check.names = FALSE
+)
+
+knitr::kable(categories)
+```
+
+As shown in @tbl-categories, the product plan is intentionally anchored around the physical needs of long-bodied breeds rather than general pet merchandise, which is the core differentiator for this store concept.
+
+## Initial Shopify Setup Evidence
+
+The following screenshots document the initial Shopify store setup, including the admin dashboard, selected theme, and homepage customization draft.
+
+::: panel-tabset
+### Admin Area
+
+![Shopify admin dashboard for Little Legs Pet Co](admin-dashboard.png){width="643"} \### Selected Theme ![Selected theme (Horizon) for Little Legs Pet Co](theme-selection.png) \### Homepage Draft ![Homepage customization draft for Little Legs Pet Co](homepage-draft.png)
+:::
+
+:::: :::::
+
+::: callout-tip
+## Quarto tip
+
+To insert a screenshot, drag the image file into the same project folder as this `.qmd`, then use: `![Caption](filename.png)`
+:::
+
+## Connection to CPP Farm Store
+
+Building Little Legs Pet Co. from scratch has direct parallels to the CPP Farm Store consulting project. Both are niche, mission-driven retail concepts with a passionate but under served customer base rather than a mass-market one. Little Legs serves dachshund owners who feel overlooked by mainstream pet retail, just as the CPP Farm Store serves students and community members looking for a local, education-driven alternative to chain grocery stores. Going through the exercise of defining a target customer, narrowing a product category plan, and setting up a Shopify storefront has clarified how important it is to make early, deliberate choices about *who* the store is for before deciding *what* it sells or *how* it's merchandised online. For the Farm Store project, this reinforces the value of segment-specific product positioning (e.g., highlighting CPP-grown wine and gift boxes for community members vs. convenience and discounts for students) and the importance of a clean, easy-to-navigate online storefront to convert digital discovery into real foot traffic or online orders.
+
+## Appendix
+
+**GitHub Repository:** \[Insert your GitHub repo URL here\]
+
+**GitHub Pages (Published Site):** \[Insert your published GitHub Pages URL here\]
